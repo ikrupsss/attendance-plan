@@ -1,0 +1,17 @@
+{
+  "name": "ATTENDANCE PLAN",
+  "short_name": "Attendance",
+  "description": "Stay ahead of every class — personal attendance tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#7F4EB9",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

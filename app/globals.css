@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FDFBF7; /* Warm creamy porcelain */
+  --foreground: #2D253A; /* Deep dark purple-tinted charcoal */
+  --card-bg: #FFFFFF;
+  --border-subtle: #EFE9F5;
+  --lavender-accent: #8E65D3;
+  --mint-accent: #22C582;
+}
+
+.dark {
+  --background: #121017;
+  --foreground: #F3EEF9;
+  --card-bg: #1B1723;
+  --border-subtle: #2C2538;
+  --lavender-accent: #B290DC;
+  --mint-accent: #4AE1A4;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Custom soft scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(142, 101, 211, 0.2);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(142, 101, 211, 0.4);
+}
+
+/* Clean animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Touch active feedback */
+.active-press:active {
+  transform: scale(0.98);
+}
